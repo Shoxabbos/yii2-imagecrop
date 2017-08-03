@@ -1,6 +1,6 @@
 {
     "name": "shoxabbos/yii2-imagecrop",
-    "description": "Create api doc",
+    "description": "Simple photo cropper",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","imagecrop"],
     "license": "MIT",
