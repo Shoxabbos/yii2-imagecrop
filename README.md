@@ -21,6 +21,10 @@ or add
 
 to the require section of your `composer.json` file.
 
+Demo
+-----
+![alt text](https://github.com/Shoxabbos/yii2-imagecrop/blob/master/demo.png)
+
 
 Usage
 -----
