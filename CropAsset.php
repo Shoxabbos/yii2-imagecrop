@@ -6,7 +6,7 @@
  * Time: 21:05
  */
 
-namespace app\widgets\crop;
+namespace shoxabbos\imagecrop;
 
 use yii\web\View;
 use kartik\base\AssetBundle;

@@ -1,8 +1,8 @@
 {
-    "name": "shoxabbos/yii2-apicrud",
+    "name": "shoxabbos/yii2-imagecrop",
     "description": "Create api doc",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","apicrud"],
+    "keywords": ["yii2","extension","imagecrop"],
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "shoxabbos\\apicrud\\": ""
+            "shoxabbos\\imagecrop\\": ""
         }
     }
 }

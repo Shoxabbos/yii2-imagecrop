@@ -10,7 +10,7 @@
  * @var $widget \app\widgets\crop\CropWidget
  */
 
-\app\widgets\crop\CropAsset::register($this);
+\shoxabbos\imagecrop\CropAsset::register($this);
 
 
 if (!is_file($widget->path) || empty($widget->image)) {

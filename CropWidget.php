@@ -6,7 +6,7 @@
  * Time: 13:57
  */
 
-namespace app\widgets\crop;
+namespace shoxabbos\imagecrop;
 
 use yii\base\Widget;
 use yii\web\NotFoundHttpException;

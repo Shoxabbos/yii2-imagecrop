@@ -1,6 +1,6 @@
-API Crud
+IMage Crop
 ========
-Create api doc
+Crop image with croppic.js lib
 
 Installation
 ------------
@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist shoxabbos/yii2-apicrud "*"
+php composer.phar require --prefer-dist shoxabbos/yii2-imagecrop "*"
 ```
 
 or add
 
 ```
-"shoxabbos/yii2-apicrud": "*"
+"shoxabbos/yii2-imagecrop": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -25,7 +25,25 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
-
+Add this action to your controller
 ```php
-<?= \shoxabbos\apicrud\AutoloadExample::widget(); ?>```
+public function actions()
+{
+    return [
+        'crop' => [
+            'class' => CropAction::className(),
+            'width' => 900,
+            'height' => 600,
+        ]
+    ];
+}
+```
+
+Add this code to your view file
+```php
+CropWidget::widget([
+    'action' => Url::to(['crop']),
+    'image' => $model->photoUrl,
+    'path' => Yii::getAlias('@webroot')."/".$model->photo,
+]);
+```
