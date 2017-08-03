@@ -6,7 +6,7 @@
  * Time: 14:23
  */
 
-namespace app\widgets\crop;
+namespace shoxabbos\imagecrop;
 
 use app\components\helpers\SimpleImage;
 use yii\base\Action;
