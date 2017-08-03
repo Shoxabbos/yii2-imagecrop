@@ -26,12 +26,12 @@ Usage
 -----
 
 Add this action to your controller
-```php
+```php 
 public function actions()
 {
     return [
         'crop' => [
-            'class' => CropAction::className(),
+            'class' => \shoxabbos\imagecrop\CropAction::className(),
             'width' => 900,
             'height' => 600,
         ]
@@ -41,7 +41,7 @@ public function actions()
 
 Add this code to your view file
 ```php
-CropWidget::widget([
+\shoxabbos\imagecrop\CropWidget::widget([
     'action' => Url::to(['crop']),
     'image' => $model->photoUrl,
     'path' => Yii::getAlias('@webroot')."/".$model->photo,
