@@ -13,8 +13,18 @@ use yii\web\NotFoundHttpException;
 
 class CropWidget extends Widget
 {
+    /**
+     * Image url
+     * @var string
+     */
     public $image;
+
+    /**
+     * Full image path
+     * @var string
+     */
     public $path;
+
     public $width;
     public $height;
     public $action;

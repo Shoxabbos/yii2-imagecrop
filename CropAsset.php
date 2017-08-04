@@ -11,13 +11,6 @@ namespace shoxabbos\imagecrop;
 use yii\web\View;
 use kartik\base\AssetBundle;
 
-/**
- * Asset bundle that provides a polyfill for javascript native alert, confirm, and prompt boxes. The BootstrapDialog
- * will be used if available or needed, else the javascript native dialogs will be rendered.
- *
- * @author Kartik Visweswaran <kartikv2@gmail.com>
- * @since 1.0
- */
 class CropAsset extends AssetBundle
 {
     /**

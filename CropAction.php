@@ -14,9 +14,19 @@ use yii\base\DynamicModel;
 
 class CropAction extends Action {
 
+    /**
+     * @var int
+     */
     public $width = 100;
+
+    /**
+     * @var int
+     */
     public $height = 100;
 
+    /**
+     * Get data from POST and crop image
+     */
     public function run() {
         $model = new DynamicModel(['x', 'y', 'width', 'height', 'rotate', 'scaleX', 'scaleY', 'path', 'widthTo', 'widthTo']);
         $model->addRule(['x', 'y', 'width', 'height', 'rotate', 'scaleX', 'scaleY'], 'integer')
