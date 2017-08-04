@@ -52,6 +52,5 @@ Add this code to your view file
 ]);
 ```
 
-
 Developer Team
-http://www.qwerty.uz
+http://www.qwerty.uz. By @shoxabbos
