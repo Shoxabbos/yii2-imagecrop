@@ -51,3 +51,7 @@ Add this code to your view file
     'path' => Yii::getAlias('@webroot')."/".$model->photo,
 ]);
 ```
+
+
+Developer Team
+http://www.qwerty.uz
