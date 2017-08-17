@@ -49,6 +49,7 @@ Add this code to your view file
     'action' => Url::to(['crop']),
     'image' => $model->photoUrl,
     'path' => Yii::getAlias('@webroot')."/".$model->photo,
+    'ration' => '4 / 3',
 ]);
 ```
 
