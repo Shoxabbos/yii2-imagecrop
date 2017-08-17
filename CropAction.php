@@ -24,6 +24,8 @@ class CropAction extends Action {
      */
     public $height = 100;
 
+    public $whenCropped;
+
     /**
      * Get data from POST and crop image
      */
@@ -36,11 +38,16 @@ class CropAction extends Action {
             /**
              * @var $img SimpleImage
              */
+            
             $img = \Yii::$app->image;
             $img->load($model->path)
                 ->crop($model->x, $model->y, $model->x + $model->width, $model->y + $model->height)
                 ->resize($this->width, $this->height)
                 ->save($model->path);
+
+            if ($this->whenCropped instanceof \Closure) {
+                call_user_func($this->whenCropped);
+            }
         }
 
         \Yii::$app->response->redirect(\Yii::$app->request->referrer);

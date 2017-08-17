@@ -23,8 +23,8 @@ class CropWidget extends Widget
      * Full image path
      * @var string
      */
+    public $modelId;
     public $path;
-
     public $width;
     public $height;
     public $action;

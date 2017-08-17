@@ -7,7 +7,7 @@
  */
 
 /**
- * @var $widget \app\widgets\crop\CropWidget
+ * @var $widget \shoxabbos\imagecrop\CropWidget
  */
 
 \shoxabbos\imagecrop\CropAsset::register($this);
@@ -92,6 +92,7 @@ $this->registerJs($script);
     <div class="col-sm-12 text-center"><br>
         <div class="form-group">
             <?php $form = \kartik\form\ActiveForm::begin(['action' => $widget->action]) ?>
+            <input type="hidden" id="modelId" name="modelId" value="<?=$widget->modelId?>">
             <input type="hidden" id="photoX" name="DynamicModel[x]" value="">
             <input type="hidden" id="photoY" name="DynamicModel[y] value="">
             <input type="hidden" id="photoWidth" name="DynamicModel[width] value="">
