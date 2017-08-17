@@ -38,6 +38,9 @@ public function actions()
             'class' => \shoxabbos\imagecrop\CropAction::className(),
             'width' => 900,
             'height' => 600,
+            'whenCropped' => function () {
+                // when file cropped!
+            }
         ]
     ];
 }
